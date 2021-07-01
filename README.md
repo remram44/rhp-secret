@@ -62,6 +62,9 @@ Limitations and drawbacks
 * This needs services to change their token format
 * There is now a competing IETF scheme (though it hasn't seen much adoption)
 * The format is kind of verbose (`rhp-secret:sendgrid.com/91on9SIkbUfSsfvfznkrVx.vAqI9VLmlANMdA7I5dc2TEwla_bkPCIK_6tFaq7FsTV` instead of `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`)
+
+### Potential drawbacks
+
 * You need to allow leaked tokens to be submitted from everywhere, not just GitHub. The security implications of this are not clear (e.g. potential for denial of service); this is not the way GitHub designed their protocol, as they recommend checking the included signature, but no motivation was provided
 * The reporting mechanism needs a service to have a domain name and to deploy the endpoint at the root, so it might not work for a service used from an IP or deployed in a subdirectory of a shared host.
 * GitHub provides a mechanism to report false-positives which is not part of this specification, though it could be added without breaking compatibility (as HTTP request header?).
