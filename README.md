@@ -69,8 +69,8 @@ Limitations and drawbacks
 Discussions
 -----------
 
-* https://news.ycombinator.com/item?id=25979908 2021-01-31
-* https://news.ycombinator.com/item?id=26568651 2021-03-24
+* [2021-01-31, Hackernews, on RFC 8959](https://news.ycombinator.com/item?id=25979908)
+* [2021-03-24, Hackernews, on GitHub adding PyPI secret scanning](https://news.ycombinator.com/item?id=26568651)
   * Asked PyPI developer why their reporting endpoint needed to be protected by a GitHub signature
     * He mentioned it might be used as an Oracle to check tokens, as that can be done without knowing the username (API use needs username + token)
     * Someone mentioned denial-of-service related to revoking someone's token, however possession of the token leads to worse attacks, and you can always commit it to GitHub to get it revoked
