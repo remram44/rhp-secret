@@ -21,7 +21,7 @@ In this document, I propose a way to fix those issues via a new unified secret f
 Alternatives
 ------------
 
-Building an open registry of regular expressions and reporting endpoints, available to everyone and not only GitHub, would also work. It would allow a new code hosting platform to scan for all those services without having to be contacted by each one.
+Building an open registry of regular expressions and reporting endpoints, available to everyone and not only GitHub, would also work. It would allow a new code hosting platform to scan for all those services without having to be contacted by each one. One such list is in [gitleaks](https://github.com/zricethezav/gitleaks/blob/master/config/default.go)
 
 [RFC 8959](https://www.rfc-editor.org/rfc/rfc8959.html) introduced a `secret-token:` URI scheme to make tokens recognizable, however it does not help with reporting in any way. We could extend this format, however there is a risk of collision with existing tokens, and this specification would be hard to discover.
 
